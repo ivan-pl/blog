@@ -10,7 +10,9 @@
     "prepare": "husky install",
     "build": "webpack --node-env production",
     "build:dev": "webpack --node-env development",
-    "dev": "webpack serve --node-env development"
+    "dev": "webpack serve --node-env development",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -32,6 +34,7 @@
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.26.0",
+    "gh-pages": "^4.0.0",
     "html-loader": "^4.1.0",
     "html-webpack-plugin": "^5.5.0",
     "husky": "^8.0.1",
