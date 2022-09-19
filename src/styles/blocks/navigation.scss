@@ -19,11 +19,13 @@
     opacity: 1;
   }
 
-  &--col-2 {
+  &--footer {
     flex-flow: row wrap;
+    font-weight: 400;
+    font-size: 1.2rem;
   }
 
-  &__item--col-2 {
+  &__item--footer {
     flex-basis: 50%;
     margin-bottom: 1rem;
   }

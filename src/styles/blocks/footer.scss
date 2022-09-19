@@ -2,19 +2,19 @@
 
 .footer {
   width: 100%;
-  height: 11rem;
   padding: 0 3%;
+  margin-bottom: 0.8rem;
   border-top: solid;
+  display: flex;
+  flex-flow: row wrap;
   font-family: "Readex Pro", Helvetica, sans-serif;
   font-weight: 500;
   font-size: 1.4rem;
-  display: flex;
-  flex-flow: row wrap;
 
   &__contact {
     display: flex;
     flex-flow: column nowrap;
-    align-self: flex-end;
+    align-self: center;
     width: 50%;
   }
 
@@ -36,6 +36,11 @@
   &__links {
     display: flex;
     flex-flow: column nowrap;
+  }
+
+  &__title {
+    font-size: 1.3rem;
+    font-weight: 700;
   }
 
   &__hr {
