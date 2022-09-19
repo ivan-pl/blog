@@ -3,10 +3,15 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const path = require("path");
 
+const pages = ["index", "articles"];
+
 module.exports = {
-  entry: "./src/index.js",
+  entry: pages.reduce((config, page) => {
+    config[page] = `./src/${page}.js`; // eslint-disable-line no-param-reassign
+    return config;
+  }, {}),
   output: {
-    filename: "main.js",
+    filename: "[name].js",
     path: path.resolve(__dirname, "dist"),
     clean: true,
     environment: {
@@ -51,12 +56,17 @@ module.exports = {
   optimization: {
     minimizer: [`...`, new CssMinimizerPlugin()],
   },
-  plugins: [
-    new HtmlWebpackPlugin({
-      template: "./src/pages/index.html",
-    }),
-    new MiniCssExtractPlugin(),
-  ],
+  plugins: [new MiniCssExtractPlugin()].concat(
+    pages.map(
+      (page) =>
+        new HtmlWebpackPlugin({
+          inject: true,
+          template: `./src/pages/${page}.html`,
+          filename: `${page}.html`,
+          chunks: [page],
+        })
+    )
+  ),
   devServer: {
     compress: true,
     port: 9000,
