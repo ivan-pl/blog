@@ -3,7 +3,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const path = require("path");
 
-const pages = ["index", "articles", "topic-1"];
+const pages = ["index", "articles", "topic-1", "about"];
 
 module.exports = {
   entry: pages.reduce((config, page) => {
