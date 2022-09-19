@@ -1,11 +1,12 @@
+@import "header", "footer";
+
 :root {
   font-size: 16px;
 }
 
 * {
-  box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
 }
 
 .html {
@@ -14,7 +15,14 @@
 }
 
 .page {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows:
+    auto
+    1fr
+    auto;
   min-height: 100vh;
   max-width: 90rem;
+  min-width: 40rem;
   margin: 0 auto;
 }

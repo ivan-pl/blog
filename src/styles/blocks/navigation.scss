@@ -18,4 +18,13 @@
   &__item--active {
     opacity: 1;
   }
+
+  &--col-2 {
+    flex-flow: row wrap;
+  }
+
+  &__item--col-2 {
+    flex-basis: 50%;
+    margin-bottom: 1rem;
+  }
 }
