@@ -1,1 +1,8 @@
-@import "blocks/page";
+@import "blocks/page", "blocks/article";
+
+.main {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 3% 5%;
+}
