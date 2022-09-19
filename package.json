@@ -55,7 +55,7 @@
   "lint-staged": {
     "*.js": "eslint --cache --fix",
     "*.scss": "stylelint --fix",
-    "*.{js,scss,md}": "prettier --write"
+    "*.{js,html,scss,md}": "prettier --write"
   },
   "dependencies": {
     "normalize.css": "^8.0.1"
