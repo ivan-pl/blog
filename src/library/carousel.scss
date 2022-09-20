@@ -1,0 +1,84 @@
+.carousel {
+  display: flex;
+  position: relative;
+  flex-flow: row nowrap;
+  gap: 2%;
+  padding: 0;
+  overflow: hidden;
+
+  &__slide {
+    position: relative;
+    height: 100%;
+    flex: 1 0 100%;
+    transition: all 0.4s;
+    list-style-type: none;
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  &__slide:nth-of-type(1) {
+    border: 1rem solid blueviolet;
+  }
+
+  &__slide:nth-of-type(2) {
+    border: 1rem solid greenyellow;
+  }
+
+  &__slide:nth-of-type(3) {
+    border: 1rem solid blanchedalmond;
+  }
+
+  @mixin button-arrow($direction) {
+    position: absolute;
+    height: 100%;
+    width: 8%;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    top: 0;
+
+    &-icon {
+      width: 100%;
+      height: 100%;
+      background-position: center;
+      background-color: transparent;
+      background-repeat: no-repeat;
+      background-size: contain;
+      opacity: 0.5;
+    }
+
+    &:hover {
+      background: linear-gradient($direction, transparent 50%, mintcream);
+    }
+
+    &:hover &-icon {
+      opacity: 1;
+    }
+  }
+
+  &__left-arrow {
+    @include button-arrow(to left);
+
+    display: none;
+    left: 0;
+
+    &-icon {
+      background-image: url("../images/left-arrow.png");
+    }
+  }
+
+  &__right-arrow {
+    @include button-arrow(to right);
+
+    right: 0;
+
+    &-icon {
+      background-image: url("../images/right-arrow.png");
+    }
+  }
+}
