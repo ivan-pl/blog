@@ -21,18 +21,6 @@
     object-position: center;
   }
 
-  &__slide:nth-of-type(1) {
-    border: 1rem solid blueviolet;
-  }
-
-  &__slide:nth-of-type(2) {
-    border: 1rem solid greenyellow;
-  }
-
-  &__slide:nth-of-type(3) {
-    border: 1rem solid blanchedalmond;
-  }
-
   @mixin button-arrow($direction) {
     position: absolute;
     height: 100%;
