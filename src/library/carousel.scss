@@ -52,7 +52,6 @@
   &__left-arrow {
     @include button-arrow(to left);
 
-    display: none;
     left: 0;
 
     &-icon {
