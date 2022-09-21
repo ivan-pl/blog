@@ -29,9 +29,9 @@ export default class Carousel {
 
   #setOptions() {
     this.carousel.style.gap = this.options.gap;
-    this.carousel.querySelector(".carousel__slide").style[
-      "transition-duration"
-    ] = this.options.duration;
+    this.carousel.querySelectorAll(".carousel__slide").forEach((slide) => {
+      slide.style["transition-duration"] = this.options.duration;
+    });
 
     if (this.options.interval !== null) {
       this.#startAutoScroll();
