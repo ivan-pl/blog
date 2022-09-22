@@ -6,7 +6,7 @@
   font-family: "Readex Pro";
   font-style: normal;
   font-weight: 400;
-  src: local("Readex Pro"), url("../fonts/ReadexPro-Regular.ttf");
+  src: local("Readex Pro"), url("../assets/fonts/ReadexPro-Regular.ttf");
   font-display: swap;
 }
 
@@ -14,7 +14,7 @@
   font-family: "Readex Pro";
   font-style: normal;
   font-weight: 500;
-  src: local("Readex Pro Medium"), url("../fonts/ReadexPro-Medium.ttf");
+  src: local("Readex Pro Medium"), url("../assets/fonts/ReadexPro-Medium.ttf");
   font-display: swap;
 }
 
@@ -22,7 +22,7 @@
   font-family: "Readex Pro";
   font-style: normal;
   font-weight: 600;
-  src: local("Readex Pro SemiBold"), url("../fonts/ReadexPro-SemiBold.ttf");
+  src: local("Readex Pro SemiBold"), url("../assets/fonts/ReadexPro-SemiBold.ttf");
   font-display: swap;
 }
 
@@ -30,6 +30,6 @@
   font-family: "Readex Pro";
   font-style: normal;
   font-weight: 700;
-  src: local("Readex Pro Bold"), url("../fonts/ReadexPro-Bold.ttf");
+  src: local("Readex Pro Bold"), url("../assets/fonts/ReadexPro-Bold.ttf");
   font-display: swap;
 }
