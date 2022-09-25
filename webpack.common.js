@@ -18,8 +18,6 @@ module.exports = {
       arrowFunction: false,
     },
   },
-  devtool:
-    process.env.MODE_ENV === "development" ? "eval-source-map" : "source-map",
   module: {
     rules: [
       {
@@ -67,10 +65,4 @@ module.exports = {
         })
     )
   ),
-  devServer: {
-    compress: true,
-    port: 9000,
-    open: true,
-    watchFiles: ["*.html"],
-  },
 };
