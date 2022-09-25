@@ -1,13 +1,9 @@
 .logo {
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-
-  &__title {
-    white-space: nowrap;
-    font-family: "Readex Pro", Helvetica, sans-serif;
-    font-weight: 600;
-    font-size: 1.5rem;
-    font-style: normal;
+  width: 150px;
+  height: 35px;
+  background: {
+    image: url("../assets/images/logo.svg");
+    repeat: no-repeat;
+    size: contain;
   }
 }

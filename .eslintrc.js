@@ -15,4 +15,13 @@ module.exports = {
       { props: true, ignorePropertyModificationsFor: ["slide"] },
     ],
   },
+  overrides: [
+    {
+      files: ["webpack.*.js"],
+      rules: {
+        "import/no-extraneous-dependencies": "off",
+        "import/extensions": "off",
+      },
+    },
+  ],
 };

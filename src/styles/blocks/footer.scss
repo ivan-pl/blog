@@ -18,12 +18,11 @@
     width: 50%;
   }
 
-  &__number {
-    font-style: normal;
-  }
-
+  &__number,
   &__email {
     font-style: normal;
+    text-decoration-line: none;
+    color: black;
   }
 
   &__links-wrap {
