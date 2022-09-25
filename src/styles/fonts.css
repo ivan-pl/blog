@@ -22,7 +22,8 @@
   font-family: "Readex Pro";
   font-style: normal;
   font-weight: 600;
-  src: local("Readex Pro SemiBold"), url("../assets/fonts/ReadexPro-SemiBold.ttf");
+  src: local("Readex Pro SemiBold"),
+    url("../assets/fonts/ReadexPro-SemiBold.ttf");
   font-display: swap;
 }
 
