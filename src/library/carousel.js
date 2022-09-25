@@ -1,3 +1,9 @@
+/*
+  Add the following markup:
+  ul > il > img
+  Then add class: <ul class="carousel">
+*/
+
 export default class Carousel {
   slides = [];
 
