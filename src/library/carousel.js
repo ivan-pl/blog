@@ -1,7 +1,22 @@
 /*
   Add the following markup:
   ul > il > img
-  Then add class: <ul class="carousel">
+  Then add class: <ul class="carousel">.
+  Import example:
+  
+    import "./library/carousel.scss";
+    import Carousel from "./library/carousel";
+
+    function initializeCarousel() {
+      const options = { gap: "7%", duration: "0.7s", interval: "10000" };
+      const carousel = new Carousel(
+        document.querySelector(".carousel"),
+        options
+      );
+      carousel.initialize();
+    }
+
+    initializeCarousel();
 */
 
 export default class Carousel {
