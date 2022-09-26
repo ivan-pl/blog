@@ -1,5 +1,5 @@
 {
-  "name": "js-basic-hw-9",
+  "name": "blog",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -17,14 +17,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ivan-pl/js-basic-hw-9.git"
+    "url": "git+https://github.com/ivan-pl/blog.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ivan-pl/js-basic-hw-9/issues"
+    "url": "https://github.com/ivan-pl/blog/issues"
   },
-  "homepage": "https://github.com/ivan-pl/js-basic-hw-9#readme",
+  "homepage": "https://github.com/ivan-pl/blog#readme",
   "devDependencies": {
     "@babel/core": "^7.19.0",
     "@babel/preset-env": "^7.19.0",
