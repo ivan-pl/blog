@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html class="html" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../assets/images/icon.png" />
+    <title>The Blog | Main</title>
+  </head>
+  <body class="page">
+    <header class="header">
+      <a class="logo header__logo" href="./index.html"></a>
+      <nav class="navigation">
+        <a class="navigation__item navigation__item--active" href="./index.html"
+          >Main</a
+        >
+        <a class="navigation__item" href="./articles.html">Articles</a>
+        <a class="navigation__item" href="./about.html">About</a>
+        <a class="navigation__item" href="./contact.html">Contact</a>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="introduction main__introduction">
+        <h1 class="visually-hidden">Introduction</h1>
+        <p class="introduction__title">
+          Hey, <br />
+          welcome to <br />
+          THE BLOG
+        </p>
+        <p class="introduction__description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, atque
+          nobis. Quisquam ullam optio officiis ut odio voluptas, officia, dolore
+          dolorum ducimus recusandae nulla delectus voluptate enim cum
+          reprehenderit ea!
+        </p>
+        <button
+          class="introduction__button"
+          onclick="document.location='articles.html'"
+        >
+          Get started
+        </button>
+        <ul class="carousel">
+          <li>
+            <img
+              src="../assets/images/main-gallery-1.jpg"
+              alt="An iphone on a desk"
+            />
+          </li>
+          <li>
+            <img
+              src="../assets/images/main-gallery-2.jpg"
+              alt="A person looks down on a phone"
+            />
+          </li>
+          <li>
+            <img
+              src="../assets/images/main-gallery-3.jpg"
+              alt="Iphone, macbook and smartphone on a table"
+            />
+          </li>
+          <li>
+            <img
+              src="../assets/images/main-gallery-4.jpg"
+              alt="Man looks down on a phone"
+            />
+          </li>
+        </ul>
+      </section>
+      <span class="main__bg-image"> </span>
+    </main>
+    <footer class="footer">
+      <address class="footer__contact">
+        <a class="logo" href="./index.html"></a>
+        <a class="footer__number" href="tel:+121353472217"
+          >+1 (2135) 347-22-17</a
+        >
+        <a class="footer__email" href="mailto:support@theblog.com"
+          >support@theblog.com</a
+        >
+      </address>
+      <div class="footer__links-wrap">
+        <div class="footer__links">
+          <h2 class="footer__title">Quick Links</h2>
+          <nav class="navigation navigation--footer">
+            <a
+              class="navigation__item navigation__item--footer"
+              href="index.html"
+              >Main</a
+            >
+            <a
+              class="navigation__item navigation__item--footer"
+              href="articles.html"
+              >Articles</a
+            >
+            <a
+              class="navigation__item navigation__item--footer"
+              href="about.html"
+              >About</a
+            >
+            <a
+              class="navigation__item navigation__item--footer"
+              href="contact.html"
+              >Contact</a
+            >
+          </nav>
+        </div>
+      </div>
+      <hr class="footer__hr" />
+      <small class="footer__copyright"
+        >© 2022 The Blog. All rights reserved</small
+      >
+    </footer>
+  </body>
+</html>

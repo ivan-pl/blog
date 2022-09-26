@@ -1,0 +1,29 @@
+@import "blocks/page";
+
+.article {
+  margin: 0 auto;
+  padding: 3% 10%;
+
+  &__title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+
+  &__carousel {
+    width: 50%;
+    height: auto;
+    float: right;
+  }
+
+  &__text {
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}

@@ -3,18 +3,21 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const path = require("path");
 
+const pages = ["index", "articles", "topic-1", "about", "contact"];
+
 module.exports = {
-  entry: "./src/index.js",
+  entry: pages.reduce((config, page) => {
+    config[page] = `./src/${page}.js`; // eslint-disable-line no-param-reassign
+    return config;
+  }, {}),
   output: {
-    filename: "main.js",
+    filename: "[name].js",
     path: path.resolve(__dirname, "dist"),
     clean: true,
     environment: {
       arrowFunction: false,
     },
   },
-  devtool:
-    process.env.MODE_ENV === "development" ? "eval-source-map" : "source-map",
   module: {
     rules: [
       {
@@ -40,7 +43,7 @@ module.exports = {
         loader: "html-loader",
       },
       {
-        test: /\.jpg/,
+        test: /\.jpg|svg/,
         type: "asset/resource",
         generator: {
           filename: "images/[hash][ext]",
@@ -51,16 +54,15 @@ module.exports = {
   optimization: {
     minimizer: [`...`, new CssMinimizerPlugin()],
   },
-  plugins: [
-    new HtmlWebpackPlugin({
-      template: "./src/index.html",
-    }),
-    new MiniCssExtractPlugin(),
-  ],
-  devServer: {
-    compress: true,
-    port: 9000,
-    open: true,
-    watchFiles: ["*.html"],
-  },
+  plugins: [new MiniCssExtractPlugin()].concat(
+    pages.map(
+      (page) =>
+        new HtmlWebpackPlugin({
+          inject: true,
+          template: `./src/pages/${page}.html`,
+          filename: `${page}.html`,
+          chunks: [page],
+        })
+    )
+  ),
 };

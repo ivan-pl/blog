@@ -1,0 +1,25 @@
+.contact-form {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem;
+  width: 30%;
+  min-width: 22rem;
+
+  &__title {
+    text-align: center;
+  }
+
+  &__submit {
+    width: 9.3rem;
+    font-size: 1.5rem;
+    background-color: white;
+    border-radius: 1rem;
+    align-self: center;
+  }
+
+  &__name,
+  &__email,
+  &__details {
+    border-radius: 0.6rem;
+  }
+}

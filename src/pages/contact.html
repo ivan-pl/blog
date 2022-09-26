@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html class="html" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../assets/images/icon.png" />
+    <title>The Blog | Main</title>
+  </head>
+  <body class="page">
+    <header class="header">
+      <a class="logo header__logo" href="./index.html"></a>
+      <nav class="navigation">
+        <a class="navigation__item" href="./index.html">Main</a>
+        <a class="navigation__item" href="./articles.html">Articles</a>
+        <a class="navigation__item" href="./about.html">About</a>
+        <a
+          class="navigation__item navigation__item--active"
+          href="./contact.html"
+          >Contact</a
+        >
+      </nav>
+    </header>
+
+    <main class="main">
+      <form class="contact-form" action="">
+        <h1 class="contact-form__title">Contact Us</h1>
+        <input
+          type="text"
+          name="name"
+          id="contact-form__name"
+          class="contact-form__name"
+          placeholder="Name"
+        />
+        <input
+          type="text"
+          name="email"
+          id="contact-form__email"
+          class="contact-form__email"
+          placeholder="Email"
+        />
+        <textarea
+          name="details"
+          id="contact-form__details"
+          class="contact-form__details"
+          rows="8"
+          placeholder="What you wanna say?"
+        ></textarea>
+        <button class="contact-form__submit">Submit</button>
+      </form>
+    </main>
+
+    <footer class="footer">
+      <address class="footer__contact">
+        <a class="logo" href="./index.html"></a>
+        <a class="footer__number" href="tel:+121353472217"
+          >+1 (2135) 347-22-17</a
+        >
+        <a class="footer__email" href="mailto:support@theblog.com"
+          >support@theblog.com</a
+        >
+      </address>
+      <div class="footer__links-wrap">
+        <div class="footer__links">
+          <h2 class="footer__title">Quick Links</h2>
+          <nav class="navigation navigation--footer">
+            <a
+              class="navigation__item navigation__item--footer"
+              href="index.html"
+              >Main</a
+            >
+            <a
+              class="navigation__item navigation__item--footer"
+              href="articles.html"
+              >Articles</a
+            >
+            <a
+              class="navigation__item navigation__item--footer"
+              href="about.html"
+              >About</a
+            >
+            <a
+              class="navigation__item navigation__item--footer"
+              href="contact.html"
+              >Contact</a
+            >
+          </nav>
+        </div>
+      </div>
+      <hr class="footer__hr" />
+      <small class="footer__copyright"
+        >© 2022 The Blog. All rights reserved</small
+      >
+    </footer>
+  </body>
+</html>
