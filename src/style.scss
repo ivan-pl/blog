@@ -1,0 +1,14 @@
+:root {
+  font-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+html {
+  /* mobile viewport bug fix */
+  min-height: fill-available;
+}
