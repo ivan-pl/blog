@@ -8,7 +8,13 @@ module.exports = {
     ecmaVersion: "latest",
     sourceType: "module",
   },
-  rules: {},
+  rules: {
+    "no-restricted-syntax": "off",
+    "no-param-reassign": [
+      "error",
+      { props: true, ignorePropertyModificationsFor: ["slide"] },
+    ],
+  },
   overrides: [
     {
       files: ["webpack.*.js"],
